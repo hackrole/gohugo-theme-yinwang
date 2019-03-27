@@ -1,10 +1,10 @@
 <div class="outer">
-  <ul class="list-group">
-      {{ $data := .Data }}
-      {{ range $key, $value := .Data.Terms.Alphabetical }}
-      <li class="list-group-item title">
-          <a href="{{ $.Site.BaseURL }}{{ $data.Plural }}/{{ $value.Name | urlize }}"> {{ $value.Name }}&nbsp;&nbsp({{ $value.Count }})</a>
-      </li>
-      {{ end }}
-  </ul>
+    <ul class="list-group">
+        {{ $data := .Data }}
+        {{ range $key, $value := .Data.Terms.Alphabetical }}
+        <li class="list-group-item title">
+            <a href="{{ $.Site.BaseURL }}{{ $data.Plural }}/{{ $value.Name | urlize }}"> {{ $value.Name }}&nbsp;({{ $value.Count }}) </a>
+        </li>
+        {{ end }}
+    </ul>
 </div>

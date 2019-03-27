@@ -153,7 +153,11 @@ p code {
 a {
   text-decoration: none;
   cursor: crosshair;
+<<<<<<< HEAD
   //border-bottom: 1px dashed orange;
+=======
+  // border-bottom: 1px dashed orange;
+>>>>>>> master
   color: #930ee4;
 }
 
