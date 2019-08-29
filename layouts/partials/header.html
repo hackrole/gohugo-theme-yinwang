@@ -22,12 +22,12 @@
     
 
 
-    {{ if .IsHome }}
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="{{.Site.BaseURL}}css/stylesheet.css">
     <link rel="stylesheet" href="{{.Site.BaseURL}}css/home.css">
 
+    {{ if .IsHome }}
     {{ else }}
         {{ with .Site.Params.anchorLink}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
@@ -107,7 +107,6 @@
     }</script>
 
     <!-- 只有在首页才给出，导航条 -->
-    {{ if .IsHome }}
     <nav class="navbar navbar-default navbar-fixed-top" style="opacity: .9" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -143,7 +142,6 @@
             </div>
         </div>
     </nav>
-    {{ end }}
 
 
     {{ if .IsHome }}
